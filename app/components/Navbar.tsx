@@ -1,0 +1,66 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Navbar() {
+    return (
+        <>
+            <div className="container py-3 d-flex justify-content-between align-items-center">
+                <Link className="brand d-flex align-items-center" href="#beranda">
+                    <Image src="/logo.jpg" alt="Logo GameLan - Jogja Game Developer Community" width={120} height={62} style={{ height: "62px", width: "auto" }} />
+                </Link>
+                <Link href="#gabung" className="btn btn-gl px-4 py-2 d-none d-sm-inline-block">
+                    <i className="bi bi-person-plus-fill me-2"></i>Gabung Komunitas
+                </Link>
+            </div>
+
+            <nav className="menu navbar navbar-expand-lg p-0">
+                <div className="container">
+                    <button className="navbar-toggler border-dark my-2" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i className="bi bi-list text-dark fs-3"></i>
+                    </button>
+                    <div className="collapse navbar-collapse" id="nav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item me-2">
+                                <Link className="nav-link active" href="#beranda">
+                                    Beranda
+                                </Link>
+                            </li>
+                            <li className="nav-item me-2">
+                                <Link className="nav-link" href="#program">
+                                    Program
+                                </Link>
+                            </li>
+                            <li className="nav-item me-2">
+                                <Link className="nav-link" href="#event">
+                                    Event
+                                </Link>
+                            </li>
+                            <li className="nav-item me-2">
+                                <Link className="nav-link" href="#gabung">
+                                    Gabung
+                                </Link>
+                            </li>
+                            <li className="nav-item me-2">
+                                <Link className="nav-link" href="#member">
+                                    Anggota
+                                </Link>
+                            </li>
+                            <li className="nav-item me-2">
+                                <Link className="nav-link" href="#blog">
+                                    Blog
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" href="#kontak">
+                                    Kontak
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </>
+    );
+}

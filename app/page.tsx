@@ -1,5 +1,5 @@
 import Topbar from "./components/Topbar";
-// import Navbar from "@/components/Navbar";
+import Navbar from "./components/Navbar";
 // import HeroSection from "@/components/HeroSection";
 // import EventCountdown from "@/components/EventCountdown";
 // import ProgramSection from "@/components/ProgramSection";
@@ -15,8 +15,8 @@ export default function HomePage() {
     return (
         <>
             <Topbar />
-            {/* <Navbar />
-            <HeroSection />
+            <Navbar />
+            {/* <HeroSection />
             <EventCountdown />
             <ProgramSection />
             <GabungSection />
@@ -25,7 +25,7 @@ export default function HomePage() {
             <BlogSection />
             <TestimonialSection />
             <ProudBanner />
-            <Footer /> */}
+            <Footer />  */}
         </>
     );
 }
