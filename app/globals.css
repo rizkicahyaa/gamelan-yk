@@ -24,8 +24,8 @@ h5 {
 a {
     text-decoration: none;
 }
-.btn-gl,
-.btn-red {
+.btn.btn-gl,
+.btn.btn-red {
     background: var(--red);
     color: #fff;
     font-weight: 600;
@@ -33,8 +33,8 @@ a {
     border-radius: 6px;
     transition: 0.2s;
 }
-.btn-gl:hover,
-.btn-red:hover {
+.btn.btn-gl:hover,
+.btn.btn-red:hover {
     background: #c40f22;
     color: #fff;
 }
