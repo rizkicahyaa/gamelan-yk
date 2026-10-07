@@ -7,14 +7,13 @@ export default function Footer() {
                 <div className="row g-4">
                     <div className="col-lg-4">
                         <Image
-                            src="/logo.jpg"
+                            src="/logo-2.png"
                             alt="GameLan"
                             width={140}
                             height={70}
                             style={{
-                                height: "70px",
+                                height: "80px",
                                 width: "auto",
-                                background: "#fff",
                                 padding: "4px",
                             }}
                             className="mb-3"

@@ -28,7 +28,7 @@ export default function Navbar() {
         <>
             <div className="container py-3 d-flex justify-content-between align-items-center">
                 <Link className="brand d-flex align-items-center" href="#beranda">
-                    <Image src="/logo.jpg" alt="Logo GameLan - Jogja Game Developer Community" width={120} height={62} style={{ height: "62px", width: "auto" }} />
+                    <Image src="/logo-2.png" alt="Logo GameLan - Jogja Game Developer Community" width={120} height={62} style={{ height: "62px", width: "auto" }} />
                 </Link>
                 <Link href="#gabung" className="btn btn-gl px-4 py-2 d-none d-sm-inline-block">
                     <i className="bi bi-person-plus-fill me-2"></i>Gabung Komunitas
