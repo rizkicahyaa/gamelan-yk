@@ -2,8 +2,28 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
+    const navRef = useRef<HTMLElement>(null);
+    const [isSticky, setIsSticky] = useState(false);
+    const [navOffsetTop, setNavOffsetTop] = useState(0);
+
+    useEffect(() => {
+        if (navRef.current) {
+            setNavOffsetTop(navRef.current.offsetTop);
+        }
+
+        const handleScroll = () => {
+            if (navRef.current) {
+                setIsSticky(window.scrollY >= navOffsetTop);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [navOffsetTop]);
+
     return (
         <>
             <div className="container py-3 d-flex justify-content-between align-items-center">
@@ -15,7 +35,9 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <nav className="menu navbar navbar-expand-lg p-0">
+            {isSticky && <div style={{ height: navRef.current?.offsetHeight ?? 0 }} />}
+
+            <nav ref={navRef} className={`menu navbar navbar-expand-lg p-0${isSticky ? " navbar-sticky" : ""}`} style={isSticky ? { position: "fixed", top: 0, left: 0, right: 0, zIndex: 1030 } : {}}>
                 <div className="container">
                     <button className="navbar-toggler border-dark my-2" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="bi bi-list text-dark fs-3"></i>
