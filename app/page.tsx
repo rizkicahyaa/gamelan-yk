@@ -2,7 +2,7 @@ import Topbar from "./components/Topbar";
 import Navbar from "./components/Navbar";
 import Heroes from "./components/Heroes";
 import EventCountdown from "./components/EventCountdown";
-// import ProgramSection from "@/components/ProgramSection";
+import ProgramSection from "./components/ProgramSection";
 // import GabungSection from "@/components/GabungSection";
 // import StatsSection from "@/components/StatsSection";
 // import MemberSection from "@/components/MemberSection";
@@ -18,8 +18,8 @@ export default function HomePage() {
             <Navbar />
             <Heroes />
             <EventCountdown />
-            {/* <ProgramSection />
-            <GabungSection />
+            <ProgramSection />
+            {/* <GabungSection />
             <StatsSection />
             <MemberSection />
             <BlogSection />
