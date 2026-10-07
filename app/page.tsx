@@ -9,7 +9,7 @@ import JoinUs from "./components/JoinUs";
 // import BlogSection from "@/components/BlogSection";
 // import TestimonialSection from "@/components/TestimonialSection";
 // import ProudBanner from "@/components/ProudBanner";
-// import Footer from "@/components/Footer";
+import Footer from "./components/Footer";
 
 export default function HomePage() {
     return (
@@ -20,12 +20,12 @@ export default function HomePage() {
             <EventCountdown />
             <ProgramSection />
             <JoinUs />
+            <Footer />
             {/* <StatsSection />
             <MemberSection />
             <BlogSection />
             <TestimonialSection />
-            <ProudBanner />
-            <Footer />  */}
+            <ProudBanner /> */}
         </>
     );
 }
