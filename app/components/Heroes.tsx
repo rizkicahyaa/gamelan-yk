@@ -18,14 +18,14 @@ export default function Heroes() {
                         </Link>
                     </div>
                     <div className="col-lg-5 text-center">
-                        <div className="pac-wrap">
+                        {/* <div className="pac-wrap">
                             <div className="pac"></div>
                             <div className="dots">
                                 <i></i>
                                 <i></i>
                                 <i></i>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
