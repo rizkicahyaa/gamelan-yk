@@ -7,7 +7,7 @@ export default function Heroes() {
                 <div className="row align-items-center g-5">
                     <div className="col-lg-7">
                         <h1>
-                            Bikin Game Bareng Komunitas Game Dev di <span>Jogja</span>
+                            Seru-Seruan Bareng Komunitas Game Dev di <span>Jogja</span>
                         </h1>
                         <p className="lead my-4">GameLan adalah komunitas game developer Yogyakarta. Tempat programmer, artis, desainer, dan musisi saling belajar, berbagi, dan merilis game bersama.</p>
                         <Link href="#gabung" className="btn btn-gl btn-lg px-4 me-2">
