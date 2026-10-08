@@ -3,11 +3,11 @@ import Navbar from "./components/Navbar";
 import Heroes from "./components/Heroes";
 import EventCountdown from "./components/EventCountdown";
 import ProgramSection from "./components/ProgramSection";
+import Testimonial from "./components/Testimonial";
 import JoinUs from "./components/JoinUs";
 // import StatsSection from "@/components/StatsSection";
 // import MemberSection from "@/components/MemberSection";
 // import BlogSection from "@/components/BlogSection";
-// import TestimonialSection from "@/components/TestimonialSection";
 // import ProudBanner from "@/components/ProudBanner";
 import Footer from "./components/Footer";
 
@@ -19,12 +19,12 @@ export default function HomePage() {
             <Heroes />
             <EventCountdown />
             <ProgramSection />
+            <Testimonial />
             <JoinUs />
             <Footer />
             {/* <StatsSection />
             <MemberSection />
             <BlogSection />
-            <TestimonialSection />
             <ProudBanner /> */}
         </>
     );
