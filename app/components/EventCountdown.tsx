@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 
-const EVENT_TARGET = new Date("2026-12-12T09:00:00+07:00");
+// bagaimana jika event sementara belum ada? --> bisa dihilangkan saja. atau dihapus.
+// const EVENT_TARGET = new Date("2026-12-12T09:00:00+07:00");
 
 export default function EventCountdown() {
     const dRef = useRef<HTMLSpanElement>(null);
@@ -15,7 +16,8 @@ export default function EventCountdown() {
         const pad = (n: number) => String(n).padStart(2, "0");
 
         const tick = () => {
-            const t = Math.max(0, EVENT_TARGET.getTime() - Date.now());
+            // const t = Math.max(0, EVENT_TARGET.getTime() - Date.now());
+            const t = 0; // kalau tidak ada event, maka t = 0, dan countdown akan stuck di 00:00:00:00
             if (dRef.current) dRef.current.textContent = pad(Math.floor(t / 864e5));
             if (hRef.current) hRef.current.textContent = pad(Math.floor(t / 36e5) % 24);
             if (mRef.current) mRef.current.textContent = pad(Math.floor(t / 6e4) % 60);
@@ -40,10 +42,10 @@ export default function EventCountdown() {
                             </div>
                             <div className="col-sm-8">
                                 <small className="fw-bold text-dark">Event berikutnya</small>
-                                <h4 className="fs-5 my-1">Game Jam Jogja 2026</h4>
+                                <h4 className="fs-5 my-1">-</h4>
                                 <p className="small mb-2">
-                                    <i className="bi bi-calendar-event me-1"></i>12 Des 2026 &nbsp;
-                                    <i className="bi bi-geo-alt me-1"></i>Yogyakarta (tanggal &amp; lokasi contoh)
+                                    <i className="bi bi-calendar-event me-1"></i>- &nbsp;
+                                    <i className="bi bi-geo-alt me-1"></i>-
                                 </p>
                                 <div className="count d-flex gap-2" id="count">
                                     <div>
