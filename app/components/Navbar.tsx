@@ -50,23 +50,13 @@ export default function Navbar() {
                                 </Link>
                             </li>
                             <li className="nav-item me-2">
-                                <Link className="nav-link" href="#program">
-                                    Program
-                                </Link>
-                            </li>
-                            <li className="nav-item me-2">
                                 <Link className="nav-link" href="#event">
                                     Event
                                 </Link>
                             </li>
                             <li className="nav-item me-2">
-                                <Link className="nav-link" href="#gabung">
-                                    Gabung
-                                </Link>
-                            </li>
-                            <li className="nav-item me-2">
-                                <Link className="nav-link" href="#member">
-                                    Anggota
+                                <Link className="nav-link" href="#program">
+                                    Program
                                 </Link>
                             </li>
                             <li className="nav-item me-2">
@@ -74,9 +64,9 @@ export default function Navbar() {
                                     Blog
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" href="#kontak">
-                                    Kontak
+                            <li className="nav-item me-2">
+                                <Link className="nav-link" href="#gabung">
+                                    Gabung
                                 </Link>
                             </li>
                         </ul>
