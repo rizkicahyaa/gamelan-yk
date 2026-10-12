@@ -37,7 +37,7 @@ export default function Navbar() {
 
             {isSticky && <div style={{ height: navRef.current?.offsetHeight ?? 0 }} />}
 
-            <nav ref={navRef} className={`menu navbar navbar-expand-lg shadow p-0${isSticky ? " navbar-sticky" : ""}`} style={isSticky ? { position: "fixed", top: 0, left: 0, right: 0, zIndex: 1030 } : {}}>
+            <nav ref={navRef} className={`menu navbar navbar-expand-lg shadow p-0${isSticky ? " navbar-sticky" : ""}`} style={isSticky ? { position: "fixed", top: 0, left: 0, right: 0, width: "100%", zIndex: 1030 } : {}}>
                 <div className="container">
                     <button className="navbar-toggler border-dark my-2" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="bi bi-list text-dark fs-3"></i>

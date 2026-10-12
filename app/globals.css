@@ -7,6 +7,11 @@
     --soft: #f6f7f9;
     --navy: #222a35;
 }
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 body {
     font-family: "Open Sans", sans-serif;
     color: #6b7280;
