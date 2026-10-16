@@ -10,12 +10,14 @@ export default function Heroes() {
                             Seru-Seruan Bareng Komunitas Game Dev di <span>Jogja</span>
                         </h1>
                         <p className="lead my-4">GameLan adalah komunitas game developer Yogyakarta. Tempat programmer, artis, desainer, dan musisi saling belajar, berbagi, dan merilis game bersama.</p>
-                        <Link href="#gabung" className="btn btn-gl btn-lg px-4 me-2">
-                            Gabung sekarang
-                        </Link>
-                        <Link href="#program" className="btn btn-outline-light btn-lg px-4">
-                            Lihat program
-                        </Link>
+                        <div className="d-flex flex-wrap gap-3">
+                            <Link href="#gabung" className="btn btn-gl btn-lg px-4">
+                                Gabung sekarang
+                            </Link>
+                            <Link href="#program" className="btn btn-outline-light btn-lg px-4">
+                                Lihat program
+                            </Link>
+                        </div>
                     </div>
                     <div className="col-lg-5 text-center">
                         {/* <div className="pac-wrap">
